@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="margin-top:20px; margin-left:60px; margin-right:60px;">
+	<form action=Cadastro method=POST>
+		<h1 style="text-align:center">Cadastro de aluno</h1> <br> <br>
+		Matrícula:  <br>
+		<input type="number" pattern="[0-9]{20}" style="width:30%"  name=matricula placeholder="MATRÍCULA" required> <br>
+		Nome: <br>
+		<input type=text style="width:80%" name=nome placeholder="NOME" required> <br>
+		Idade: <br>
+		<input type=number pattern="[0-9]{1-3}" min="1" max="150" title="Informe um valor numerico" style="width:60px" name=idade placeholder="IDADE" required> <br>
+		<p> Sexo<br>
+		<input type="radio" name="sexo" value="masculino"> Masculino<br>
+		<input type="radio" name="sexo" value="feminino">Feminino<br>
+		<input type=submit value=Enviar>
+	</form>
+</body>
+</html>
